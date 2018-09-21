@@ -23,8 +23,8 @@
 # SOFTWARE.
 
 """
-Please specify customised hosts of kafka brokers as well as topic that
-your program is going to produce data.
+Please specify customised hosts of mysql instances that
+your program is going to write data to.
 """
 config = {
     'jdbcUrl': '',

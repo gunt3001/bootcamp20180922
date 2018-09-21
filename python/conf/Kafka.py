@@ -24,7 +24,7 @@
 
 """
 Please specify customised hosts of kafka brokers as well as topic that
-your program is going to produce data.
+your program is going to produce data to.
 """
 config = {
     'brokers': '',

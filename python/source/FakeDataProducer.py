@@ -25,6 +25,8 @@
 import datetime
 import json
 import time
+import sys
+sys.path.insert(0, "../")
 
 from random import random, randint
 from kafka import KafkaProducer
@@ -60,7 +62,6 @@ def produce_mock_orders_json(brokers, topic):
             "region": region[randint(0,len(region)-1)],
             "orderid": orderid
         }
-        print record
         orderid += 1
         producer.send(topic, json.dumps(record))
         time.sleep(randint(50, 600) / 1000.0)
