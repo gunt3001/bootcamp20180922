@@ -53,7 +53,7 @@ mysql_endpoint = "shopee-de-workshop.cpbs4qr3yd7i.ap-southeast-1.rds.amazonaws.c
 mysql_username = "workshop"
 mysql_password = "ShopEE123"
 mysql_database = "workshop"
-mysql_table = "agg_order_minute_tab"
+mysql_table = "agg_order_minute_tab_[user_name]"
 # this is to indicate aggregate time window.
 # unit is second
 aggregation_interval = 5
