@@ -7,7 +7,7 @@ Connect to hadoop cluster
 * `username` is your email prefix.
 
 ```bash
-ssh -i <path_to_your_key> <username>@ec2-13-229-249-214.ap-southeast-1.compute.amazonaws.com
+ssh -i <path_to_your_key> <username>@ec2-52-221-226-112.ap-southeast-1.compute.amazonaws.com
 ```
 
 Open your spark shell
