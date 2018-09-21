@@ -66,6 +66,18 @@ total_price_rdd = key_value_rdd.reduceByKey(lambda x, y: pass)
 
 Please follow the instruction in comment to finish your code.
 
+Finally, please look for mysql table name we created for you at `Superset`
+http://superset.lumos.idata.shopee.com/superset/sqllab 
+
+Steps to mysql table name:
+* Log in with user name: bootcamp, password: bootcamp
+* Click SQL Lab tab in the header
+* Specify Database to `workshop_db`
+* Specify Schema to `workshop_db`
+* type your name in `Add a table`, auto completion will help you find table name with your name.
+
+Specify code line 56 in `MyStreamingETL.py` to table name you found above.
+
 ##### Excute Your Program
 Put your code onto server
 
