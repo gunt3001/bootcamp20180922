@@ -7,13 +7,13 @@ Connect to hadoop cluster
 * `username` is your email prefix.
 
 ```bash
-chmod 600 <path_to_your_key>
-ssh -i <path_to_your_key> <username>@ec2-52-221-226-112.ap-southeast-1.compute.amazonaws.com
+$ chmod 600 <path_to_your_key>
+$ ssh -i <path_to_your_key> <username>@ec2-52-221-226-112.ap-southeast-1.compute.amazonaws.com
 ```
 
 Open your spark shell
 ```bash
-pyspark
+$ pyspark
 ```
 
 If you see this output in your terminal
