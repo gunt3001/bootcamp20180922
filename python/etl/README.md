@@ -3,8 +3,7 @@
 This module is a streaming etl that consumes data from a kafka cluster, and aggregates data every certain interval and write aggregated results to a mysql database.
 
 ### Background
-![ETL Structure]
-(../../assets/data-flow.pnv)
+![ETL Structure](data-flow.png)
 
 ##### Input Data Format
 
