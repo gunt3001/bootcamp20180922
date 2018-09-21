@@ -67,8 +67,37 @@ total_price_rdd = key_value_rdd.reduceByKey(lambda x, y: pass)
 Please follow the instruction in comment to finish your code.
 
 ##### Excute Your Program
-Open directory ./python/etl/ and build your project
+Put your code onto server
+
+```
+cd bootcamp20180922/python
+
+scp -i <path_to_your_key> -r etl <username>@ec2-52-221-226-112.ap-southeast-1.compute.amazonaws.com:
+```
+Please note the colon at the end of command. 
+
+Open directory `etl` and build your project
 
 ```bash
+cd etl
+
 make build
+```
+
+Run your code in Spark
+```bash
+bash start-etl.sh
+```
+
+After a while, you could be able to view the result from `Superset`
+http://superset.lumos.idata.shopee.com/superset/sqllab 
+
+### Got Problem?
+No worries, please checkout branch to `workshop`, you will get full
+program provided by us, and test it to get an intuition of spark streaming.
+
+```bash
+git fetch
+
+git checkout workshop
 ```
