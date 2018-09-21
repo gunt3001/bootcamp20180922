@@ -3,10 +3,8 @@
 This module is a streaming etl that consumes data from a kafka cluster, and aggregates data every certain interval and write aggregated results to a mysql database.
 
 ### Background
-
-graph LR
-A[Kafka (json format)] -->B[Spark Streaming ETL]
-B -->C[MySQL]
+![ETL Structure]
+(../../assets/data-flow.pnv)
 
 ##### Input Data Format
 
@@ -55,7 +53,7 @@ Main logic is included in function
 def processRDD(batch_time, rdd)
 ```
 
-You task is to implement two functions
+Your tasks are to implement two functions
 
 ```python
 def formReducerKeyAndValue(key_value_pair)
@@ -67,7 +65,7 @@ and
 total_price_rdd = key_value_rdd.reduceByKey(lambda x, y: pass)
 ```
 
-Please follow the instruction in to comment to code.
+Please follow the instruction in comment to finish your code.
 
 ##### Excute Your Program
 Open directory ./python/etl/ and build your project
