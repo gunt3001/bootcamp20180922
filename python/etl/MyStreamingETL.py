@@ -70,16 +70,10 @@ def formReducerKeyAndValue(key_value_pair):
         
         so that we could use 2018-09-22 10:25:30 to indicate time window 
         since 2018-09-22 10:25:30 to 2018-09-22 10:25:40
+    
+    implement here.
     """
-    return (
-        "{0}-{1}-{2}-{3}".format(
-            key_value_pair['region'],
-            key_value_pair['shopid'],
-            key_value_pair['itemid'],
-            key_value_pair['timestamp'] / aggregation_interval * aggregation_interval
-        ),
-        key_value_pair['price']
-    )
+    pass
     
 def processReducedResult(key_value_tuple):
     """
@@ -148,10 +142,12 @@ def processRDD(batch_time, rdd):
 
     # we try to combine those tuple with the same key
     # reduceByKey will shuffle the tuple with the same key into the
-    # same executor, and execute func we provided, here is 
-    # lambda x, y: x + y. 
+    # same executor, and execute func we provided
+    # 
     # x and y denote values of each two tuples with the same key. 
-    total_price_rdd = key_value_rdd.reduceByKey(lambda x, y: x + y)
+    # 
+    # IMPLEMENT HERE.
+    total_price_rdd = key_value_rdd.reduceByKey(lambda x, y: pass)
 
     # after procedures above, we got a list of aggregated result
     # looks like:
