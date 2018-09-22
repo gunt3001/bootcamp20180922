@@ -8,7 +8,10 @@ Connect to hadoop cluster
 
 ```bash
 $ chmod 600 <path_to_your_key>
+
+# please choose any one of command, we had two clusters.
 $ ssh -i <path_to_your_key> <username>@ec2-52-221-226-112.ap-southeast-1.compute.amazonaws.com
+$ ssh -i <path_to_your_key> <username>@ec2-54-169-163-25.ap-southeast-1.compute.amazonaws.com
 ```
 
 Open your spark shell
