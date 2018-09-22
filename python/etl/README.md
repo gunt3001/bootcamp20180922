@@ -88,7 +88,7 @@ scp -i <path_to_your_key> -r etl <username>@ec2-52-221-226-112.ap-southeast-1.co
 ```
 Please note the colon at the end of command. 
 
-Open directory `etl` and build your project
+Log in our cluster again, and open directory `etl` and build your project
 
 ```bash
 cd etl
