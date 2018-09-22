@@ -84,7 +84,8 @@ Put your code onto server
 ```
 cd bootcamp20180922/python
 
-scp -i <path_to_your_key> -r etl <username>@ec2-52-221-226-112.ap-southeast-1.compute.amazonaws.com:
+scp -i <path_to_your_key> -r etl hadoop@ec2-52-221-226-112.ap-southeast-1.compute.amazonaws.com:<your own folder name>
+scp -i <path_to_your_key> -r etl hadoop@ec2-54-169-163-25.ap-southeast-1.compute.amazonaws.com:<your own folder name>
 ```
 Please note the colon at the end of command. 
 
